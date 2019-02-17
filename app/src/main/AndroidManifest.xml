@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cxzl.processtest">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".processset.ProcessSetActivity000">
+            <intent-filter>
+                <action android:name="com.cxzl.processtest_action000"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".processset.ProcessSetActivity001"
+            android:process=":private">
+            <intent-filter>
+                <action android:name="com.cxzl.processtest_action001"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".processset.ProcessSetActivity002"
+            android:process="com.cxzl.public">
+            <intent-filter>
+                <action android:name="com.cxzl.processtest_action002"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".processset.ProcessSetActivity010"
+            android:multiprocess="true">
+            <intent-filter>
+                <action android:name="com.cxzl.processtest_action010"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".processset.ProcessSetActivity011"
+            android:multiprocess="true"
+            android:process=":private">
+            <intent-filter>
+                <action android:name="com.cxzl.processtest_action011"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".processset.ProcessSetActivity012"
+            android:multiprocess="true"
+            android:process="com.cxzl.public">
+            <intent-filter>
+                <action android:name="com.cxzl.processtest_action012"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".processset.ProcessSetActivity100"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="com.cxzl.processtest_action100"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".processset.ProcessSetActivity101"
+            android:launchMode="singleInstance"
+            android:process=":private">
+            <intent-filter>
+                <action android:name="com.cxzl.processtest_action101"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".processset.ProcessSetActivity102"
+            android:launchMode="singleInstance"
+            android:process="com.cxzl.public">
+            <intent-filter>
+                <action android:name="com.cxzl.processtest_action102"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".processset.ProcessSetActivity110"
+            android:launchMode="singleInstance"
+            android:multiprocess="true">
+            <intent-filter>
+                <action android:name="com.cxzl.processtest_action110"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".processset.ProcessSetActivity111"
+            android:launchMode="singleInstance"
+            android:multiprocess="true"
+            android:process=":private">
+            <intent-filter>
+                <action android:name="com.cxzl.processtest_action111"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".processset.ProcessSetActivity112"
+            android:launchMode="singleInstance"
+            android:multiprocess="true"
+            android:process="com.cxzl.public">
+            <intent-filter>
+                <action android:name="com.cxzl.processtest_action112"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

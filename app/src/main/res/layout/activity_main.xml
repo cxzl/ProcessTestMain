@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:text = "包名：com.cxzl.processtest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text = "选择启动activity的方式"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:id="@+id/rg_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rb_standard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="standard"/>
+        <RadioButton
+            android:id="@+id/rb_singleinstance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="singleinstance"/>
+    </RadioGroup>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text = "是否开启multiprocess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:id="@+id/rg_multiprocess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rb_multprocess_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="false"/>
+        <RadioButton
+            android:id="@+id/rb_multprocess_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="true"/>
+    </RadioGroup>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text = "设置process"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:id="@+id/rg_process"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rb_process_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="默认进程"/>
+        <RadioButton
+            android:id="@+id/rb_process_private"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置私有进程"/>
+        <RadioButton
+            android:id="@+id/rb_process_public"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置公有进程"/>
+    </RadioGroup>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text = "启动Activity："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="6dp"
+        android:id="@+id/tv_click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击跳转到ProcessTestActivity"
+         />
+</LinearLayout>
